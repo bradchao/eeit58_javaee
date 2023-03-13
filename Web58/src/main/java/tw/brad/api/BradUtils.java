@@ -4,8 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class BradUtils {
-	public static String loadView() throws Exception {
-		String viewFile = "C:\\Users\\user\\git\\repository2\\Web58\\src\\main\\webapp\\views\\view1.html";
+	public static String loadView(String view) throws Exception {
+		String viewFile = 
+			String.format(
+				"C:\\Users\\user\\git\\repository2\\Web58\\src\\main\\webapp\\views\\%s.html", 
+				view);
 		FileReader reader = new FileReader(viewFile);
 		BufferedReader br = new BufferedReader(reader);
 		String line = null; StringBuffer sb = new StringBuffer();
