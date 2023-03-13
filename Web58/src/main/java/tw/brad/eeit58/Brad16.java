@@ -21,13 +21,23 @@ public class Brad16 extends HttpServlet {
 		String y = request.getParameter("y");
 		
 		// 2. 演算法 Brad17
-		try {
-			Brad17 model = new Brad17(x, y);
-			int result = model.plus();
-			request.setAttribute("result", result);
-		}catch(Exception e) {
-			request.setAttribute("result", 0);
-			System.out.println(e.toString());
+		if (x != null && y != null) {
+			try {
+				Brad17 model = new Brad17(x, y);
+				int result = model.plus();
+				request.setAttribute("x", x);
+				request.setAttribute("y", y);
+				request.setAttribute("result", result +"");
+			}catch(Exception e) {
+				request.setAttribute("x", "");
+				request.setAttribute("y", "");
+				request.setAttribute("result", "");
+				System.out.println(e.toString());
+			}
+		}else {
+			request.setAttribute("x", "");
+			request.setAttribute("y", "");
+			request.setAttribute("result", "");
 		}
 		
 		// 3. 呈現 View

@@ -15,16 +15,9 @@ import tw.brad.api.BradUtils;
 public class Brad18 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String x = request.getParameter("x");
-		String y = request.getParameter("y");
-		String result;
-		int r =  (Integer)request.getAttribute("result");
-		
-		if (x != null && y != null) {
-			result = r + "";
-		}else {
-			x = y = result = "";
-		}
+		String x = (String)request.getAttribute("x");
+		String y = (String)request.getAttribute("y");
+		String result = (String)request.getAttribute("result");
 		
 		//---------------
 		response.setContentType("text/html; charset=UTF-8");
