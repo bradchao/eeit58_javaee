@@ -14,7 +14,15 @@
 		${paramValues.habbit[4] }
 		${paramValues.habbit[5] }
 		<hr />
-
+		Method: <%= request.getMethod() %><br />
+		Method: ${pageContext.request.method }<br />
+		IP: <%= request.getRemoteAddr() %><br />
+		IP: ${pageContext.request.remoteAddr }<br />
+		Locale: <%= request.getLocale() %><br />
+		Locale: ${pageContext.request.locale }<br />
+		Language: <%= request.getLocale().getDisplayLanguage() %><br />
+		Language: ${pageContext.request.locale.displayLanguage }<br />
+		
 	
 	</body>
 </html>
