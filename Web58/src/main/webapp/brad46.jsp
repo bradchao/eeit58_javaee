@@ -7,7 +7,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<form action="brad47.jsp">
+		<form action="brad48.jsp">
 			ID: <input name="id" /><br />
 			Account: <input name="account" /><br />
 			Realname: <input name="realname" /><br />
