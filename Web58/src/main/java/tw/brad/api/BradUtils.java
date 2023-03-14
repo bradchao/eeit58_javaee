@@ -23,4 +23,10 @@ public class BradUtils {
 	public static String sayYa(String name) {
 		return String.format("Ya! %s<br />", name);
 	}
+	
+	public static String calc(String x, String y, String op) {
+		
+		return (int)(Math.random()*100) + "";
+	}
+	
 }
