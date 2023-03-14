@@ -25,8 +25,21 @@ public class BradUtils {
 	}
 	
 	public static String calc(String x, String y, String op) {
-		
-		return (int)(Math.random()*100) + "";
+		try {
+			int intX = Integer.parseInt(x);
+			int intY = Integer.parseInt(y);
+			int r = 0, mod = 0; 
+			String ret = "";
+			switch(op) {
+				case "1": r = intX + intY; ret += r; break;
+				case "2": r = intX - intY; ret += r; break;
+				case "3": r = intX * intY; ret += r; break;
+				case "4": r = intX / intY; mod = intX % intY; ret += r + "......" + mod; break;
+			}
+			return ret;
+		}catch(Exception e) {
+			return "";
+		}
 	}
 	
 }
