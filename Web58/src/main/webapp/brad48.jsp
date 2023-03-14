@@ -26,6 +26,20 @@
 		<hr />
 		Member:
 		${member22.id } | ${member22.account } | ${member22.realname }
+		<hr />
+		<jsp:declaration>
+			Integer a;
+			String b;
+		</jsp:declaration>
+		<jsp:scriptlet>
+			a = 10; b = "Brad";
+		</jsp:scriptlet>
+		a = <jsp:expression>a</jsp:expression><br />
+		b = <jsp:expression>b</jsp:expression><br />
+		<hr />
+		${member }
+		
+		
 			
 	</body>
 </html>

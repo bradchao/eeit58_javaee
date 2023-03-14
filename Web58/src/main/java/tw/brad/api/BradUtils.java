@@ -17,4 +17,10 @@ public class BradUtils {
 		}
 		return sb.toString();
 	}
+	public static String sayYa() {
+		return "Ya";
+	}
+	public static String sayYa(String name) {
+		return String.format("Ya! %s<br />", name);
+	}
 }

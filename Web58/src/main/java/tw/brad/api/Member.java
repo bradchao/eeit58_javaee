@@ -38,5 +38,8 @@ public class Member {
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
-	
+	@Override
+	public String toString() {
+		return account + ":" + realname;
+	}
 }

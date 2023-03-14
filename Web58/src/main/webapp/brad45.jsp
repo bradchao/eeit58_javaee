@@ -31,11 +31,7 @@
 		<jsp:getProperty property="realname" name="member2"/> |
 		<jsp:getProperty property="birthday" name="member2"/> |
 		<hr />
-		Member1:
-		<jsp:getProperty property="id" name="member1"/> |
-		<jsp:getProperty property="account" name="member1"/> |
-		<jsp:getProperty property="realname" name="member1"/> |
-		<jsp:getProperty property="birthday" name="member1"/> |
+
 		
 	</body>
 </html>
