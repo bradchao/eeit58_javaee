@@ -8,6 +8,11 @@ public class Brad17 {
 		this.y = Integer.parseInt(y);
 		this.op = Integer.parseInt(op);
 	}
+	public Brad17(String x, String y) throws Exception {
+		this.x = Integer.parseInt(x);
+		this.y = Integer.parseInt(y);
+		this.op = 1;
+	}
 	
 	public int plus() {
 		return x + y;
