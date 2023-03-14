@@ -15,6 +15,7 @@ public class Brad17 {
 	}
 	
 	public int plus() {
+		System.out.println("plus()");
 		return x + y;
 	}
 	

@@ -1,3 +1,4 @@
+<%@page import="tw.brad.api.Log"%>
 <%@page import="tw.brad.api.Brad17"%>
 <%@ page language="java" contentType="text/html; charset=UTF8"
     pageEncoding="UTF-8"%>
@@ -14,11 +15,15 @@
 		request.setAttribute("x", x);
 		request.setAttribute("y", y);
 		request.setAttribute("r", r + "");
+		
+		//System.out.print("Hello, World");
+		Log.mesg("Hello, World");
 	}else{
 		request.setAttribute("x", "");
 		request.setAttribute("y", "");
 		request.setAttribute("r", "");
 	}
+	
 	
 %>
 <jsp:forward page="<%= viewer %>"></jsp:forward>
